@@ -10,6 +10,9 @@
             <a class="nav-link" href="{{ URL::to('/') }}">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="{{ URL::to('/testh2') }}">Login</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="{{ URL::to('/contact') }}">Contact</a>
           </li>
           <li class="nav-item">

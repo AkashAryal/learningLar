@@ -19,7 +19,7 @@ class ContactFormController extends Controller
       //save message or update message
       $message->save();
       //redirect
-      return redirect('/')->with('status', 'Message Sent');
+      return redirect('/')->with('success', 'Message Sent');
 
       //For querying
       //$querydata = App\MessageCF::all(); will get all data in whatever table

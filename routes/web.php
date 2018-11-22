@@ -15,12 +15,20 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/testh2', function () {
+    return view('testh2');
+});
+
 Route::get('/about', function () {
     return view('about');
 });
 
 Route::get('/contact', function () {
     return view('contact');
-});
+}); //->middleware('auth'); use this if you want only authenticated users to come
 
 Route::post('/contact/submit', 'ContactFormController@submit');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
