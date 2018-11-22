@@ -17,7 +17,7 @@ class CreateMessageCFsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email');
-            $table->mediumText('name');
+            $table->mediumText('message');
             $table->timestamps();
         });
     }
